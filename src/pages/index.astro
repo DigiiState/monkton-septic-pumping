@@ -5,32 +5,32 @@ const phone = "866-891-9778";
 const city = "Monkton";
 const niche = "Septic Pumping";
 const serviceImage = "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80";
-const truckImage = "https://sc02.alicdn.com/kf/A5dd3b365fb234f248e7bf687501827006.png";
 ---
 
 <Layout 
-	title={`${city.toUpperCase()} MD ${niche.toUpperCase()} | Locally Owned Maryland Septic Pumping Pros`}
-	phone={phone}
-	city={city}
-	niche={niche}
+	title={{\`\${{{city.toUpperCase()}}} MD \${{{niche.toUpperCase()}}} | Locally Owned Maryland Septic Pumping Pros\`}}
+	phone={866-891-9778}
+	city={Monkton}
+	niche={Septic Pumping}
 >
-	<!-- 1. HERO SECTION (Golden Template Standard) -->
-	<section class="relative bg-slate-800 py-32 text-center text-white bg-cover bg-center" style={`background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('${serviceImage}');`}>
+	<!-- 1. HERO SECTION -->
+	<section class="relative bg-slate-800 py-32 text-center text-white bg-cover bg-center" style={{\`background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('\${https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80}');\`}}>
 		<div class="container mx-auto px-6">
-			<h1 class="text-[50px] md:text-[70px] font-black leading-tight mb-4 uppercase tracking-tighter">{niche} {city} MD</h1>
+			<h1 class="text-[50px] md:text-[70px] font-black leading-tight mb-4 uppercase tracking-tighter">{Septic Pumping} {Monkton} MD</h1>
 			<h3 class="text-xl md:text-2xl font-bold mb-10 opacity-90 uppercase tracking-[0.2em]">Locally Owned & Professionally Managed in Maryland</h3>
-			<a href={`tel:${phone.replace(/-/g, '')}`} class="inline-block bg-white text-[#28657c] font-black text-2xl px-12 py-5 border-2 border-white hover:bg-transparent hover:text-white transition-all uppercase tracking-tighter shadow-2xl">
-				CALL NOW {phone}
+			<a href={{\`tel:\${{phone.replace(/-/g, '')}}\` chunks}} class="inline-block bg-white text-[#28657c] font-black text-2xl px-12 py-5 border-2 border-white hover:bg-transparent hover:text-white transition-all uppercase tracking-tighter shadow-2xl">
+				CALL NOW {866-891-9778}
 			</a>
 		</div>
 	</section>
 
-	<!-- 2. TRUST PILLARS & LEAD CAPTURE (70/30 Split) -->
+	<!-- 2. TRUST PILLARS & LEAD CAPTURE -->
 	<section class="py-20 bg-white">
 		<div class="container mx-auto px-6 grid lg:grid-cols-12 gap-16 items-start">
 			<div class="lg:col-span-8">
-				<h2 class="text-4xl font-black text-[#28657c] mb-12 uppercase tracking-tighter">3 REASONS TO TRUST OUR {city.toUpperCase()} {niche.toUpperCase()} TEAM</h2>
+				<h2 class="text-4xl font-black text-[#28657c] mb-12 uppercase tracking-tighter">3 REASONS TO TRUST OUR {{{city.toUpperCase()}}} {{{niche.toUpperCase()}}} TEAM</h2>
 				<div class="space-y-12">
+					
 					<div class="flex gap-8 items-start">
 						<div class="w-20 h-20 flex-shrink-0 bg-[#28657c]/5 rounded-2xl flex items-center justify-center text-4xl shadow-sm">🛡️</div>
 						<div>
@@ -68,20 +68,19 @@ const truckImage = "https://sc02.alicdn.com/kf/A5dd3b365fb234f248e7bf68750182700
 					<p id="formStatus" class="text-[11px] text-slate-400 mt-6 text-center uppercase font-black tracking-widest">100% SATISFACTION GUARANTEED</p>
 				</div>
 			</div>
-
-			</div>
 		</div>
 	</section>
 
-	<!-- 3. THE 4-STEP PROCESS (Golden Template Standard) -->
+	<!-- 3. THE 4-STEP PROCESS -->
 	<section class="py-24 bg-slate-50 border-t border-slate-100">
 		<div class="container mx-auto px-6 max-w-5xl">
 			<div class="text-center mb-20">
-				<h2 class="text-5xl font-[900] text-[#28657c] uppercase tracking-tighter mb-4">OUR {city.toUpperCase()} MD {niche.toUpperCase()} PROCESS</h2>
+				<h2 class="text-5xl font-[900] text-[#28657c] uppercase tracking-tighter mb-4">OUR {{{city.toUpperCase()}}} MD {{{niche.toUpperCase()}}} PROCESS</h2>
 				<hr class="w-24 border-b-8 border-[#28657c] mx-auto mt-6" />
 			</div>
 
 			<div class="grid md:grid-cols-4 gap-4">
+				
 				<div class="bg-white p-8 border border-slate-200 shadow-sm relative overflow-hidden group hover:border-[#28657c] transition-all">
 					<div class="text-6xl font-black text-slate-100 absolute -right-2 -top-2 group-hover:text-[#28657c]/10 transition-colors">01</div>
 					<h5 class="font-black text-[#28657c] uppercase mb-4 relative z-10">LOCATE</h5>
@@ -106,72 +105,15 @@ const truckImage = "https://sc02.alicdn.com/kf/A5dd3b365fb234f248e7bf68750182700
 		</div>
 	</section>
 
-	<!-- 4. INDUSTRIAL AUTHORITY TEXT (Abundant Clarity Standard: 1,100+ Words) -->
-	<section class="py-24 bg-white">
+	<!-- 4. AUTHORITY SECTION -->
+	<section class="py-24 bg-white border-t border-slate-100">
 		<div class="container mx-auto px-6 max-w-4xl">
 			<div class="prose prose-slate prose-lg max-w-none">
-				<h2 class="text-4xl font-black text-[#28657c] uppercase tracking-tighter mb-8">Professional Septic Pumping Excellence in Monkton Maryland</h2>
+				<h2 class="text-4xl font-black text-[#28657c] uppercase tracking-tighter mb-8">Professional {Septic Pumping} Excellence in {Monkton} Maryland</h2>
 				<p>
-					When it comes to maintaining your property's infrastructure in Monkton, Maryland, you cannot afford to take shortcuts. Unlike the big national franchises that use generic call centers, our Septic Pumping team is based right here in Monkton. We understand the specific soil and climate conditions of Maryland, and we know exactly how they affect your property.
+					When it comes to maintaining your property's infrastructure in {Monkton}, Maryland, you cannot afford to take shortcuts. Unlike the big national franchises that use generic call centers, our {Septic Pumping} team is based right here in {Monkton}. We understand the specific local conditions of Maryland and exactly how they affect your property.
 				</p>
-
-                <h3 class="text-3xl font-black text-[#28657c] uppercase tracking-tighter mb-6">The Science of Septic Pumping: Aerobic vs. Anaerobic Balance</h3>
-				<p>
-					A healthy septic system is a living biological reactor. Inside your tank in Monkton, billions of beneficial bacteria are hard at work breaking down solid waste through complex enzymatic reactions. When you neglect regular Septic Pumping, the buildup of inorganic sludge (the bottom layer) and scum (the top floating layer) begins to choke out these microbial colonies. This leads to a transition from efficient anaerobic digestion to a stagnant, failing state where hydrogen sulfide gases begin to accumulate.
-				</p>
-                <p>
-                    Our high-power extraction process resets the biological clock of your tank. This is essential for preventing "carry-over," where solid particles escape the tank and permanently clog the delicate pores of your drain field soil in Monkton, MD. Once the biomat in your drain field becomes too thick, the soil loses its ability to filter effluent, leading to surface breakouts and costly system replacements that can exceed $25,000.
-                </p>
-                <h3 class="text-3xl font-black text-[#28657c] uppercase tracking-tighter mb-6">Protecting the Chesapeake Bay from Monkton</h3>
-                <p>
-                    Maryland residents have a unique responsibility to protect the Chesapeake Bay watershed. Nitrogen and phosphorus runoff from failing septic systems in areas like Monkton and Hereford are major contributors to algae blooms that deplete oxygen in the Bay. By maintaining a strict Septic Pumping schedule, you aren't just protecting your property; you are participating in a statewide effort to preserve Maryland's aquatic ecosystems for future generations.
-                </p>
-
-                <div class="bg-[#28657c]/5 p-12 rounded-3xl my-16 border-l-8 border-[#28657c]">
-                    <h4 class="text-2xl font-black text-[#28657c] uppercase mb-6">The Ultimate Monkton Septic Checklist</h4>
-                    <ul class="space-y-4 font-bold text-slate-700">
-                        <li>[ ] PUMP EVERY 2-3 YEARS: The gold standard for Monkton families of 4 or more.</li>
-                        <li>[ ] INSPECT BAFFLES & TEES: These components prevent solids from entering the absorption field.</li>
-                        <li>[ ] CHECK RISER SEALS: Brittle seals allow Maryland rainwater to flood and overwhelm your system.</li>
-                        <li>[ ] MONITOR DRAIN FIELD TOPOGRAPHY: Watch for soft spots, odors, or unusually green grass in your yard.</li>
-                        <li>[ ] WASTE AUDIT: Avoid flushing wipes, grease, or harsh chemicals that kill beneficial bacteria.</li>
-                    </ul>
-                </div>
-
-                <h3 class="text-3xl font-black text-[#28657c] uppercase tracking-tighter mb-6">Preventing Maryland System Failures</h3>
-                <p>
-                    The rolling hills of Monkton and Northern Baltimore County often feature heavy clay-based soils. These soils have low percolation rates, meaning they process water slowly. If your Septic Pumping is overdue, the high concentration of suspended solids in the effluent will quickly overwhelm these clay pores. Our "Abundant Clarity" audit includes a visual assessment of your outlet pipe to ensure your system is discharging clean, filtered liquid as intended by its engineering.
-                </p>
-
-                <h2 class="text-4xl font-black text-[#28657c] uppercase tracking-tighter mt-24 mb-12">Frequently Asked Questions</h2>
-                <div class="space-y-10">
-                    <div>
-                        <h4 class="text-xl font-black text-slate-900 uppercase mb-2">How often should I pump my septic tank in Monkton, MD?</h4>
-                        <p class="text-slate-600">The Maryland Department of the Environment (MDE) recommends every 3 to 5 years. However, in Monkton, we suggest 2 to 3 years due to local soil density to ensure total system longevity and prevent drain field clogging.</p>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-black text-slate-900 uppercase mb-2">What are the warning signs of a failing system?</h4>
-                        <p class="text-slate-600">Common indicators include slow drains, gurgling pipes, sewage backup, or persistent foul odors in your Monkton yard. If you see standing water over your drain field, contact our emergency response team immediately.</p>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-black text-slate-900 uppercase mb-2">Can I build over my septic tank in Maryland?</h4>
-                        <p class="text-slate-600">No. Permanent structures like decks, pools, or sheds must never be placed over a tank or drain field. This is not only for maintenance access but to prevent structural collapse of the tank under heavy weight.</p>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-black text-slate-900 uppercase mb-2">Is Septic Pumping a messy process for my Monkton property?</h4>
-                        <p class="text-slate-600">Not with our team. We use long-reach industrial hoses and electronic locators to minimize yard disturbance. Our goal is to leave your property as clean as when we arrived, with a fully functioning system.</p>
-                    </div>
-                </div>
-    
-
-                <h3 class="text-3xl font-black text-[#28657c] uppercase tracking-tighter mb-6">Maryland Community Stewardship</h3>
-                <p>
-                    As a locally managed service in Monkton, MD, we are more than just a business; we are part of the Maryland community. We prioritize hiring local technicians who understand the specific challenges of our region, from the humidity of the Chesapeake to the rocky soils of Northern Baltimore County. Our goal is to provide sustainable, reliable infrastructure maintenance that keeps Maryland properties safe and profitable for decades to come.
-                </p>
-                <p>
-                    By choosing our professional services, you are supporting a network dedicated to "Abundant Clarity" in the service industry. We believe that every property owner in Monkton deserves a transparent, data-driven approach to maintenance. Whether it is protecting your home's foundation or ensuring the safety of your trees, we are here to serve our Maryland neighbors with excellence and integrity.
-                </p>
-    
+                
 			</div>
 		</div>
 	</section>
@@ -192,7 +134,7 @@ const truckImage = "https://sc02.alicdn.com/kf/A5dd3b365fb234f248e7bf68750182700
 	const status = document.getElementById('formStatus');
 	const webhookUrl = "https://wandering-king-6c05.empty-math-6c0f.workers.dev";
 
-	form?.addEventListener('submit', async (e) => {
+	form?.addEventListener('submit', async (e) => {{
 		e.preventDefault();
 		const formData = new FormData(form);
 		const data = Object.fromEntries(formData.entries());
@@ -200,22 +142,22 @@ const truckImage = "https://sc02.alicdn.com/kf/A5dd3b365fb234f248e7bf68750182700
 		data.source = window.location.hostname;
 		data.timestamp = new Date().toISOString();
 
-		try {
+		try {{
 			status.textContent = "SENDING REQUEST...";
-			const response = await fetch(webhookUrl, {
+			const response = await fetch(webhookUrl, {{
 				method: 'POST',
-				headers: { 'Content-Type': 'application/json' },
+				headers: {{ 'Content-Type': 'application/json' }},
 				body: JSON.stringify(data)
-			});
+			}});
 
-			if (response.ok) {
+			if (response.ok) {{
 				status.textContent = "✅ SUCCESS! WE WILL CALL YOU SHORTLY.";
 				form.reset();
-			} else {
+			}} else {{
 				throw new Error();
-			}
-		} catch (err) {
+			}}
+		}} catch (err) {{
 			status.textContent = "❌ ERROR SENDING. PLEASE CALL US NOW.";
-		}
-	});
+		}}
+	}});
 </script>
